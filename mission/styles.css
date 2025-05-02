@@ -47,3 +47,10 @@ img {
     width: 150px;
     margin: 0 auto;
 }
+.dark {
+    background-color: #333;
+    color: white;
+}
+.dark p:first-of-type {
+    color: rgb(160, 212, 237);
+}
