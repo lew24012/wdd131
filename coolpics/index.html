@@ -7,14 +7,15 @@
     <meta name="description" content="A collection of cool pictures.">
     <meta name="charset" content="UTF-8">
     <link rel="stylesheet" href="coolpics.css">
-    <script defer src="coolpics.js"></script>
+    <script src="coolpics.js" defer></script>
+
     <title>Coolpics</title>
 </head>
 <body>
     <header>
         <h1>Cool Pics 📷</h1>
-        <button>Menu</button>
-        <ul>
+        <button class="menu-button">Menu</button>
+        <ul class = "menu hide">
             <li><a href="">Home</a></li>
             <li><a href="">People</a></li>
             <li><a href="">Places</a></li>
@@ -52,7 +53,12 @@
             <figure>  
                 <img src="images/norris-sm.jpeg" alt="picture">
             </figure>
+
         </div>
+        <dialog class="image-viewer-modal">
+            <img class="modal-image" src="" alt="">
+            <button class="close-viewer">X</button>
+        </dialog>
     </main>
     <footer>
         <p>&copy; Not a Real Site 2025</p>
