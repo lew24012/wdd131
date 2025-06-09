@@ -1,0 +1,151 @@
+html {
+    margin: 0 auto;
+}
+
+body {
+    justify-items: center;
+}
+
+#credit-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size: smaller;
+}
+
+#card-front {
+    background-color: lightgrey;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    grid-template-rows: 2fr 1fr 1fr;
+    height: 200px;
+    width: 300px;
+    grid-column: 1 / 3;
+    grid-row: 1 / 5;
+    z-index: 2;
+    margin: 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 / 5;
+    margin: 20px 10px 0 10px;
+}
+
+.middle-row {
+    grid-column: 1 / 5;
+    grid-row: 2 / 4;
+    margin: 0 10px 0 10px;
+    display: grid;
+}
+
+.middle-row label {
+    margin-top: 20px;
+}
+
+.middle-row input {
+    height: 16px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.bottom-row {
+    grid-column: 1 / 5;
+    grid-row: 4 / 5;
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(2);
+    margin: 0 10px 0 10px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.bottom-row label {
+    display: inline;
+    text-align: left;
+    grid-row: 1 / 2;
+}
+
+.bottom-row input {
+    width: 175px;
+    grid-row: 2 / 3;
+}
+
+.bottom-row div input {
+    width: 25px;
+    grid-row: 2 / 3;
+}
+
+.bottom-row div input:last-child {
+    margin-left: 10px;
+}
+
+.bottom-row div {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+#card-back {
+    background-color: lightgrey;
+    border-radius: 7px;
+    padding: 0;
+    height: 200px;
+    width: 300px;
+    grid-column: 2 / 5;
+    grid-row: 2 / 7;
+    z-index: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3);
+    grid-template-rows: repeat(3);
+}
+
+#reader-strip {
+    height: 32px;
+    background-color: rgb(57, 57, 57);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    grid-column: 1 / 4;
+}
+#card-back div {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    display: grid;
+    justify-content: right;
+}
+
+#card-back div label, #card-back div input{
+    width: 65px;
+    padding: 0;
+}
+
+#card-back div input {
+    margin: 0px 10px 0px 0px;
+    height: 20px;
+}
+
+#card-back div label {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.errorMsg {
+    color:red;
+}
+
+#submit-button {
+    padding: 5px 10px 5px 10px;
+    border-radius: 7px;
+    grid-row: 6 / 7;
+    grid-column: 3 /4;
+    margin-top: 20px;
+}
