@@ -38,6 +38,7 @@ function displayError(msg) {
 }
 function submitHandler(event) {
 	event.preventDefault()
+	document.querySelector('.errorMsg').innerHTML = ''
 	let errorMsg = ''
 	console.log(event.target.cardNumber.value)
 	displayError('')
