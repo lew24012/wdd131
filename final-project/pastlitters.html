@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Rigby Doodles">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Well bred poodle mixes in Rigby, Idaho">
+    <meta property="og:image" content="images/hero-puppy.jpeg">
+    <meta property="og:url" content="https://lew24012@github.io/wdd131/rigbydoodles/pastlitters.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rigby Doodles - Past Litters</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.jpg" alt="Rigby Doodles"></a>
+        <button class="menu">Menu</button>
+        <nav class="hide" id="menu">
+            <a href="upcominglitters.html">Upcoming Litters</a>
+            <a href="pastlitters.html" class="current_page">Past Litters</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="ourdogs.html">Our Dogs</a>
+            <a href="breedinfo.html">Breed Info</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <form action="search" class="search">
+            <input type="text" class="find_litter" placeholder="Search Litters">
+            <label for="sort"></label><select name="sortBy" id="sort" aria-label="Choose a sorting option for the litters">
+                <option value="" selected disabled>Sort By</option>
+                <option value="mother">Mother</option>
+                <option value="father">Father</option>
+                <option value="date">Date</option>
+                <option value="breed">Breed</option>
+            </select>
+        </form>
+        <section id="past_litters">
+            <img src="images/litter-current.jpg" alt="">
+            <p>Parents: Natasha, Romeo</p>
+            <p>Birthdate: 10/15/2024</p>
+            <p>Breed: F1B Aussiedoodle</p>
+            <p>Naming Theme: Mountains</p>
+            <hr>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <a href="https://www.facebook.com/profile.php?id=100075873692757"><img src="images/facebook.webp" alt="facebook"></a>
+            <a href="https://www.instagram.com/rigbydoodles2kinds/s"><img src="images/instagram.webp" alt="instagram"></a>
+            <a href="ksl.com"><img src="images/ksl.webp" alt="ksl"></a>
+        </nav>
+        <p>&copy; 2025 Rigby Doodles. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

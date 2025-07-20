@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*css reset*/
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* *, *:before, *:after {
+  box-sizing: inherit;
+} */
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*main css*/
+body {
+    font-family: Dongle, Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}
+
+header img {
+    padding: none;
+    width: 100%;
+}
+
+header button {
+    margin-top: none;
+    border: none;
+    background: none;
+    font-family: Dongle;
+    font-size: 32px;
+    width: 100px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: smaller;
+    color: black;
+}
+
+.current_page {
+    color: #07859e;
+}
+
+.hide {
+ display: none;
+}
+
+main {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+form input {
+    width: 60vw;
+    height: 5vh;
+    font-size: 3.5vh;
+    border: solid #07859e;
+    border-radius: 40px;
+    padding: 5px;
+    padding-left: 25px;
+}
+
+form select {
+    margin-left: 10px;
+    height: 7vh;
+    font-size: 3.5vh;
+    color: white;
+    background: black;
+    border: solid black;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+#welcome {
+    text-align: center;
+    line-height: 1;
+    max-width: 950px;
+}
+
+#welcome img {
+    max-width: 100%;
+}
+#welcome h2 {
+    margin-top: 20px;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+
+#welcome p {
+    margin: 20px 0 20px 0;
+}
+
+#welcome a {
+    text-decoration: none;
+    color: white;
+    padding: 3px 15px;
+    border-radius: 15px;
+    background-color: #07859e;
+    max-width: min-content;
+    max-height: min-content;
+}
+
+#welcome a:hover {
+    background-color: white;
+    color: #07859e;
+    border: solid #07859e;
+}
+#current_litter {
+    margin-top: 70px;
+}
+
+#current_litter h2 {
+    font-size: 7vh;
+    font-weight: lighter;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+#current_litter h3 {
+    font-size: 6.5vh;
+    font-weight: lighter;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+#current_litter hr {
+    border: solid;
+    border-width: 0.05vh;
+    border-color: #07859e;
+    width: 50%;
+    margin-bottom: 3vh;
+}
+
+#past_litters {
+    font-size: 5vh;
+}
+
+#past_litters img {
+    margin-top: 5vh;
+    width: 35vw;
+}
+
+#past_litters hr {
+    border: solid;
+    border-width: 0.05vh;
+    border-color: #07859e;
+    width: 100%;
+    margin-bottom: 3vh;
+}
+.slideshow {
+    margin: 0 0 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.slideshow img {
+    max-width:90%;
+}
+
+.back_button, .next_button {
+    height: 70px;
+    width: 8vw;
+    font-size: 24px;
+    color: white;
+    border: none;
+    background-color: #07859e;
+    margin: 0 6px 0 6px;
+    text-align: center;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.back_button:hover, .next_button:hover {
+    background-color: white;
+    color: #07859e;
+    border: solid #07859e;
+}
+
+#current_litter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#current_litter img {
+    margin: 0;
+}
+
+#current_litter p {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: smaller;
+    color: grey;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav a {
+    margin: 0 10px 0 10px;
+}
+
+footer nav a img {
+    border-radius: 10px;
+    width: 2rem;
+}
+
+@media screen and (min-width: 400px) {
+    #columns {
+        display: flex;
+    }
+
+    .current_litter {
+        margin: 0 10px 0 10px;
+        text-align: center;
+    }
+
+    .current_litter div img {
+        max-width: 35vw;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    header {
+        flex-direction: row;
+        margin: 10px 10px 0 10px;
+        justify-content: space-between;
+        position:fixed;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        background: white;
+        padding: 1vh 3vw 1vh 3vw;
+    }
+
+    header img {
+        width: 35vh;
+    }
+
+    .hide {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header nav a {
+        line-height: .75;
+        margin-left: 20px;
+        text-align: left;
+        max-width: min-content;
+        font-size: 5vh;
+    }
+
+    header nav a:hover {
+        color: #07859e;
+    }
+
+    header nav a:last-of-type {
+        min-width: 10vw;
+        background-color: black;
+        color: white;
+        padding: 5px 10px 5px 10px;
+        border-radius: 15px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        border: solid black;
+    }
+
+    header nav a:last-of-type:hover {
+        background-color: white;
+        color: black;
+        border: solid black;
+    }
+
+    header button {
+        display: none;
+    }
+
+    main {
+        margin-top: 20vh;
+    }
+
+    #welcome {
+        font-size: 5.5vh;
+        font-weight: lighter;
+    }
+
+    #welcome h2 {
+        font-size: 7vh;
+        font-weight: lighter;
+    }
+
+    .back_button, .next_button {
+        max-width: 5vw;
+    }
+
+    .current_litter p {
+        font-size: 5.5vh;
+        font-weight: lighter;
+        padding-bottom: 4vh;
+    }
+
+    .current_litter div img {
+        max-width: 20vw;
+    }
+
+    .litter_photo {
+        width: 45vw;
+        max-height: min-content;
+    }
+    
+    footer {
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        padding: 1vh 3vw 1vh 3vw;
+        width: 93.9%;
+        background-color: black;
+        color: white;
+        padding-top: 5vh;
+        margin: o;
+    }
+
+    footer nav a img {
+        width: 3vw;
+    }
+    footer p {
+        font-size: 5vh;
+    }
+}
